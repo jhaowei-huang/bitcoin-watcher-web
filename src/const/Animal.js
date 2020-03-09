@@ -1,0 +1,86 @@
+const AnimalList = [
+  { code: 'Alligator', name: '匿名鱷魚', filename: 'Alligator.png' },
+  { code: 'Anteater', name: '匿名食蟻獸', filename: 'Anteater.png' },
+  { code: 'Armadillo', name: '匿名犰狳', filename: 'Armadillo.png' },
+  { code: 'Auroch', name: '匿名原牛', filename: 'Auroch.png' },
+  { code: 'Axolotl', name: '匿名蠑螈', filename: 'Axolotl.png' },
+  { code: 'Badger', name: '匿名獾', filename: 'Badger.png' },
+  { code: 'Bat', name: '匿名蝙蝠', filename: 'Bat.png' },
+  { code: 'Beaver', name: '匿名海狸', filename: 'Beaver.png' },
+  { code: 'Buffalo', name: '匿名水牛', filename: 'Buffalo.png' },
+  { code: 'Camel', name: '匿名駱駝', filename: 'Camel.png' },
+  { code: 'Capybara', name: '匿名水豚', filename: 'Capybara.png' },
+  { code: 'Chameleon', name: '匿名變色龍', filename: 'Chameleon.png' },
+  { code: 'Cheetah', name: '匿名獵豹', filename: 'Cheetah.png' },
+  { code: 'Chinchilla', name: '匿名栗鼠', filename: 'Chinchilla.png' },
+  { code: 'Chipmunk', name: '匿名花栗鼠', filename: 'Chipmunk.png' },
+  { code: 'Chupacabra', name: '匿名吸血怪', filename: 'Chupacabra.png' },
+  { code: 'Cormorant', name: '匿名鸕鶿', filename: 'Cormorant.png' },
+  { code: 'Coyote', name: '匿名郊狼', filename: 'Coyote.png' },
+  { code: 'Crow', name: '匿名烏鴉', filename: 'Crow.png' },
+  { code: 'Dingo', name: '匿名澳洲野犬', filename: 'Dingo.png' },
+  { code: 'Dinosaur', name: '匿名恐龍', filename: 'Dinosaur.png' },
+  { code: 'Dolphin', name: '匿名海豚', filename: 'Dolphin.png' },
+  { code: 'Duck', name: '匿名鴨鴨', filename: 'Duck.png' },
+  { code: 'Elephant', name: '匿名大象', filename: 'Elephant.png' },
+  { code: 'Ferret', name: '匿名雪貂', filename: 'Ferret.png' },
+  { code: 'Fox', name: '匿名狐狸', filename: 'Fox.png' },
+  { code: 'Frog', name: '匿名青蛙', filename: 'Frog.png' },
+  { code: 'Giraffe', name: '匿名長頸鹿', filename: 'Giraffe.png' },
+  { code: 'Gopher', name: '匿名地鼠', filename: 'Gopher.png' },
+  { code: 'Grizzly', name: '匿名灰熊', filename: 'Grizzly.png' },
+  { code: 'Hedgehog', name: '匿名刺蝟', filename: 'Hedgehog.png' },
+  { code: 'Hippo', name: '匿名河馬', filename: 'Hippo.png' },
+  { code: 'Hyena', name: '匿名鬣狗', filename: 'Hyena.png' },
+  { code: 'Ibex', name: '匿名羱羊', filename: 'Ibex.png' },
+  { code: 'Ifrit', name: '匿名火精靈', filename: 'Ifrit.png' },
+  { code: 'Iguana', name: '匿名鬣蜥', filename: 'Iguana.png' },
+  { code: 'Jackal', name: '匿名豺狼', filename: 'Jackal.png' },
+  { code: 'Kangaroo', name: '匿名袋鼠', filename: 'Kangaroo.png' },
+  { code: 'Koala', name: '匿名無尾熊', filename: 'Koala.png' },
+  { code: 'Kraken', name: '匿名克拉肯', filename: 'Kraken.png' },
+  { code: 'Lemur', name: '匿名狐猴', filename: 'Lemur.png' },
+  { code: 'Leopard', name: '匿名豹', filename: 'Leopard.png' },
+  { code: 'Liger', name: '匿名獅虎', filename: 'Liger.png' },
+  { code: 'Llama', name: '匿名草泥馬', filename: 'Llama.png' },
+  { code: 'Manatee', name: '匿名海牛', filename: 'Manatee.png' },
+  { code: 'Mink', name: '匿名貂', filename: 'Mink.png' },
+  { code: 'Monkey', name: '匿名猴子', filename: 'Monkey.png' },
+  { code: 'Moose', name: '匿名駝鹿', filename: 'Moose.png' },
+  { code: 'Narwhal', name: '匿名獨角鯨', filename: 'Narwhal.png' },
+  { code: 'Orangutan', name: '匿名猩猩', filename: 'Orangutan.png' },
+  { code: 'Otter', name: '匿名水獺', filename: 'Otter.png' },
+  { code: 'Panda', name: '匿名熊貓', filename: 'Panda.png' },
+  { code: 'Penguin', name: '匿名企鵝', filename: 'Penguin.png' },
+  { code: 'Platypus', name: '匿名鴨嘴獸', filename: 'Platypus.png' },
+  { code: 'Pumpkin', name: '匿名南瓜', filename: 'Pumpkin.png' },
+  { code: 'Python', name: '匿名蟒蛇', filename: 'Python.png' },
+  { code: 'Quagga', name: '匿名斑驢', filename: 'Quagga.png' },
+  { code: 'Rabbit', name: '匿名兔兔', filename: 'Rabbit.png' },
+  { code: 'Raccoon', name: '匿名浣熊', filename: 'Raccoon.png' },
+  { code: 'Rhino', name: '匿名犀牛', filename: 'Rhino.png' },
+  { code: 'Sheep', name: '匿名綿羊', filename: 'Sheep.png' },
+  { code: 'Shrew', name: '匿名鼩鼱', filename: 'Shrew.png' },
+  { code: 'Skunk', name: '匿名臭鼬', filename: 'Skunk.png' },
+  { code: 'Squirrel', name: '匿名松鼠', filename: 'Squirrel.png' },
+  { code: 'Tiger', name: '匿名老虎', filename: 'Tiger.png' },
+  { code: 'Turtle', name: '匿名龜龜', filename: 'Turtle.png' },
+  { code: 'Walrus', name: '匿名海象', filename: 'Walrus.png' },
+  { code: 'Wolf', name: '匿名狼', filename: 'Wolf.png' },
+  { code: 'Wolverine', name: '匿名金鋼狼', filename: 'Wolverine.png' },
+  { code: 'Wombat', name: '匿名袋熊', filename: 'Wombat.png' },
+];
+
+class Animal {
+  constructor() {}
+
+  static get(index) {
+    return AnimalList[index];
+  }
+
+  static get length() {
+    return AnimalList.length;
+  }
+}
+
+export default Animal;
